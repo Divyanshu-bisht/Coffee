@@ -145,9 +145,9 @@ let tl3=gsap.timeline({
 })
 
 gsap.to("#menu", {
-    trigger:"#menu",
     "--color": "black",
     scrollTrigger: {
+      trigger:"#menu",
       start: 0,
       end: "max",
       scrub: true
