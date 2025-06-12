@@ -64,48 +64,48 @@ window.addEventListener('load', () => {
 let tl=gsap.timeline()
 
 tl.from(".front",{
-    y:1000,
-    duration:1
+    y:"100vh",
+    duration:.9
 
 })
 tl.from("#coffe",{
-    y:800,
-    duration:1,
+    y:"80vh",
+    duration:0.9,
     scale:2
 
 })     
 tl.from(".front h1",{
-    y:1000,
-    duration:1
+    y:"100vh",
+    duration:.9
 
 })   
 tl.from("#coffeebean1",{
-    y:800,
-    duration:1,
+    y:"80vh",
+    duration:0.7,
     scale:1
 
 })
 tl.from("#coffeebean2",{
-    y:800,
-    duration:1,
+    y:"80vh",
+    duration:0.7,
     scale:3
 
 })   
 tl.from("#coffeebean3",{
-    y:800,
-    duration:1,
+    y:"80vh",
+    duration:0.7,
     scale:3
 
 })   
 tl.from("#coffeebean4",{
-    y:800,
-    duration:.9,
+    y:"80vh",
+    duration:.7,
     scale:2
 
 })   
 tl.from("#coffeebean5",{
-    y:800,
-    duration:.9,
+    y:"80vh",
+    duration:.6,
     scale:2
 
 })     
@@ -121,14 +121,15 @@ let tl2=gsap.timeline({
 })
 
 tl2.to("#coffe",{
-    top:770,
-    left:90, 
+    top:"150vh",
+    left:"16vw",
+    scale:0.67
     
 },"hi")
 
 tl2.to("#coffeebean1",{
-    top:710,
-    left:253, 
+    top:"125vh",
+    left:"14vw", 
     rotate:142,
     scale:0.9
 },"hi")
@@ -155,13 +156,13 @@ gsap.to("#menu", {
   });
 
 tl3.to("#coffe",{
-    top:1470,
-    left:590, 
+    top:"251vh",
+    left:"50vw", 
     duration:1
 },"hi")
 tl3.to("#coffeebean1",{
-    top:1500,
-    left:760, 
+    top:"231vh",
+    left:"50vw", 
     rotate:23,
     scale:0.9,
     duration:1
@@ -184,7 +185,7 @@ tl3.from("#bean1",{
 },"hi")
 
 tl3.from("#bean2",{
-    x:300,
+    x:"30vw",
     duration:1,
     rotate:200
 },"hi")
@@ -200,9 +201,10 @@ let tl4=gsap.timeline({
     }
 })
 tl4.to("#coffe",{
-    top:2170,
-    left:900, 
+    top:"350vh",
+    left:"70vw", 
     duration:1,
+    scale:.74
     
 },"hi")
 // tl4.to("#coffeebean1",{
@@ -214,17 +216,17 @@ tl4.to("#coffe",{
 //     duration:1  
 // },"same")
 tl4.to("#can1",{
-    top:700,
-    left:590,
+    top:"112vh",
+    left:"43.5vw",
     duration:1,
-    scale:0.9,
+    scale:1,
     rotate:-16
 },"hi")
 
 tl4.to("#can2",{
-    top:700,
-    left:140,
+    top:"112vh",
+    left:"9vw",
     duration:1,
-    scale:0.9,
+    scale:1,
     rotate:16
 },"hi")
