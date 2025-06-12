@@ -107,14 +107,17 @@ nav h1 {
 }
 
 #coffe {
-    width: 21%;
+    height: 700px;
     position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); /* Starts centered */
     filter: drop-shadow(2px 2px 10px black);
     z-index: 4;
 }
 
 #coffeebean1 {
-    width: 16%;
+    width: 18%;
     position: absolute;
     filter: drop-shadow(2px 2px 10px black);
     top: 6%;
@@ -137,7 +140,7 @@ nav h1 {
     position: absolute;
     filter: drop-shadow(2px 2px 10px black);
     top: 25%;
-    left: 26%;
+    left: 16%;
     transform: rotate(120deg);
 }
 
@@ -151,11 +154,11 @@ nav h1 {
 }
 
 #coffeebean5 {
-    width: 10%;
+    width: 14%;
     position: absolute;
     filter: drop-shadow(2px 2px 10px black);
-    top: 20%;
-    left: 55%;
+    top: 57%;
+    left: 19%;
     transform: rotate(15deg);
 }
 
@@ -176,7 +179,7 @@ nav h1 {
 
 #can1,
 #can2 {
-    width: 78%;
+    width: 260px;
     position: absolute;
     filter: drop-shadow(2px 2px 10px black);
     z-index: 3;
@@ -196,8 +199,8 @@ nav h1 {
 #bean1 {
     width: 200px;
     position: absolute;
-    top: 245px;
-    left: -75px;
+    top: 64%;
+    left: 3vw;
     rotate: 60deg;
     z-index: 1;
 }
@@ -205,8 +208,8 @@ nav h1 {
 #bean2 {
     width: 210px;
     position: absolute;
-    top: 224px;
-    left: 240px;
+    top: 40vh;
+    left: 15vw;
     rotate: 141deg;
 
 }
@@ -283,3 +286,7 @@ nav ul a.active {
     text-decoration: underline;
     transition-duration: 0.6s;
 }
+
+#coffe, #coffeebean1, #can1 {
+    will-change: transform, top, left;
+  }
